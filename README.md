@@ -13,6 +13,7 @@
 ### Package Installations 
 
 - npm i react-hot-toast react-icons sass firebase react-router-dom react-table
+- npm i --save-dev @types/react-table
 
 ### Work Flow
 
