@@ -14,6 +14,7 @@
 
 - npm i react-hot-toast react-icons sass firebase react-router-dom react-table
 - npm i --save-dev @types/react-table
+- npm install --save chart.js react-chartjs-2
 
 ### Work Flow
 
