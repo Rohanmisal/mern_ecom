@@ -19,7 +19,9 @@
     color: black;
   }
 
- 
+  $color1: white;
+  $color2: rgb(46, 46, 46);
+  $color3: rgb(0, 104, 136);
 
   .red {
     color: red;
@@ -31,13 +33,9 @@
     color: rgb(0, 195, 0);
   }
   
-  $color1: white;
-  $color2: rgb(46, 46, 46);
-  $color3: rgb(0, 104, 136);
-
   @import "admin-styles/mixin";
   
-  @import "_home";
+  @import "home";
   @import "admin-styles/dashboard";
   @import "admin-styles/products";
   @import "admin-styles/chart";
