@@ -35,6 +35,9 @@ const Cart = () => {
         <p>
           Discount: <em> - ${discount}</em>
         </p>
+        <p>
+          <b>Total: ${total}</b>
+        </p>
         <input type="text" value={couponCode} onChange={(e) => setCouponCode(e.target.value)} />
 
         {couponCode &&
