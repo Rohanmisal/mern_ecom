@@ -1,7 +1,20 @@
 import { useEffect, useState } from "react";
 import { VscError } from "react-icons/vsc";
+import CartItem from "../components/cart-item";
+import { Link } from "react-router-dom";
 
-const cartItems = [];
+const cartItems = [
+
+{
+  productId:"asasfa",
+  photo:"https://m.media-amazon.com/images/I/719C6bJv8jL._SX466_.jpg",
+  name:"Mackbook",
+  price: 3000,
+  quantity: 4,
+  stock: 10,
+},
+
+];
 const subtotal = 4000;
 const tax = Math.round(subtotal * 0.18);
 const shippingCharges = 200;
@@ -27,13 +40,21 @@ const Cart = () => {
   },[couponCode])
   return (
     <div className="cart">
-      <main></main>
+      <main>
+
+{
+ cartItems.length > 0 ?  cartItems.map((i,index) => (
+  <CartItem key={index} cartItem={i}/>
+  )) : <h1>No Items Added</h1>
+}
+
+      </main>
       <aside>
-        <p>Subtotal</p>
-        <p>Shipping Charges: ${subtotal}</p>
+        <p>Subtotal:${subtotal} </p>
+        <p>Shipping Charges: ${shippingCharges}</p>
         <p>Tax: ${tax}</p>
         <p>
-          Discount: <em> - ${discount}</em>
+          Discount: <em className="red"> - ${discount}</em>
         </p>
         <p>
           <b>Total: ${total}</b>
@@ -50,7 +71,9 @@ const Cart = () => {
               Invalid Coupon <VscError />
             </span>
           ))}    
-
+{
+  cartItems.length > 0 && <Link to="/shipping">Checkout</Link>
+}
       </aside>
     </div>
   )
