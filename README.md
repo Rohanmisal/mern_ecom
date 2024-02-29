@@ -18,9 +18,3 @@
 
 ### Work Flow
 
-<<<<<<< HEAD
-- Updating soon ![alt text](image.png)
-=======
-- Updating soon
-- ![alt text](image.png)
->>>>>>> ed6dfbae3f8fd718a073bbba5efeec78d6b3e698
