@@ -18,4 +18,11 @@
 
 ### Work Flow
 
-![alt text](image-1.png)
+#### Component Created
+- cart.tsx
+- home.tsx
+- login.tsx
+- order-details.tsx
+- orders.tsx
+- search.tsx
+- shipping.tsx
