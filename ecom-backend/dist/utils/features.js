@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 export const connectDB = () => {
-    mongoose.connect("", {
-        dbName: "Ecom 24",
+    mongoose.connect("mongodb://localhost:27017", {
+        dbName: "Ecom_23",
     })
         .then((c) => console.log(`DB Connected to ${c.connection.host}`))
         .catch((e) => console.log(e));
